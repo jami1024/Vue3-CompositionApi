@@ -6,7 +6,20 @@
 <script>
   import { demoMixin } from './minxs/demomixin'
   export default {
-    mixins: [demoMixin]
+    mixins: [demoMixin],
+    data() {
+      return {
+        message: 'hello App'
+      }
+    },
+     methods: {
+      foo() {
+        console.log("app foo");
+      }
+    },
+    created() {
+      console.log("App created 执行");
+    }
   }
 </script>
 
