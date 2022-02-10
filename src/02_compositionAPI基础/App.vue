@@ -1,38 +1,15 @@
 <template>
   <div>
-    <h2>{{counter}}</h2>
-    <h2>counter*2: {{counter * 2}}</h2>
-    <button>+1</button>
-    <button>-1</button>
+    <home message="fdsafdsa" id="aaaa" class="bbb"/>
   </div>
 </template>
 
 <script>
+  import Home from './Home.vue'
   export default {
-    data() {
-      return {
-        counter: 0
-      }
-    },
-    methods: {
-      increment() {
-
-      },
-      decrement() {
-
-      }
-    },
-    computed: {
-      doubleCounter() {
-        return this.counter * 2
-      }
-    },
-    watch() {
-
-    },
-    created() {
-      
-    },
+    components: {
+      Home
+    }
   }
 </script>
 
