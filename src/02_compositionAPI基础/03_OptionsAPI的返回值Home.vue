@@ -2,6 +2,9 @@
     <div>
       <h1>Home page</h1>
       <h2>{{message}}</h2>
+      <h2>{{title}}</h2>
+      <h2>当前计数：{{counter}}</h2>
+      <button @click="increment">+1</button>
     </div>
 </template>
 
@@ -20,10 +23,15 @@
       // setup 返回什么样子的值
 
       setup(props, context) {
-        console.log(props)
-        console.log(props.message)
-        console.log(context.attrs.id, context.attrs.class)
-        console.log(context.emit)
+        // 局部函数
+        const increment = () => {
+          console.log('+1')
+        }
+        return {
+          title: '这是title',
+          counter: 100,
+          increment
+        }
       }
     }
 </script>
