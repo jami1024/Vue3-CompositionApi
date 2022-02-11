@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import Home from './03_OptionsAPI的返回值Home.vue'
+  import Home from './Home.vue'
   export default {
     components: {
       Home
